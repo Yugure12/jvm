@@ -13,6 +13,7 @@ public class MyTest12 {
         Class<?> aClass = classLoader.loadClass("com.ethan.jvm.classload.CL");
         System.out.println(aClass);
         System.out.println("-----");
+        // 反射也属于7种对Java主动使用的情况之一
         aClass = Class.forName("com.ethan.jvm.classload.CL");
         System.out.println(aClass);
     }
