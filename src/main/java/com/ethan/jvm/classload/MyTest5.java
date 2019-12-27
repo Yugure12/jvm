@@ -1,7 +1,5 @@
 package com.ethan.jvm.classload;
 
-import java.util.Random;
-
 /**
  * 当一个接口在初始化时，并不要求其父接口都完成初始化
  * 只有在真正使用到父接口的时候(如引用接口中所定义的常量时)，才会被初始化
@@ -17,7 +15,7 @@ public class MyTest5 {
 }
 
 interface MyParent5 {
-    public static final int a = new Random().nextInt(3);;
+    public static final int a = 6;
 }
 
 interface MyChild5 extends MyParent5 {
