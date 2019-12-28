@@ -17,5 +17,8 @@ public class MyTest14 {
             URL url = urls.nextElement();
             System.out.println(url);
         }
+        System.out.println("-------");
+        Class<?> clazz = MyTest14.class;
+        System.out.println(clazz.getClassLoader());
     }
 }
