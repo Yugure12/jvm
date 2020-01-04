@@ -23,6 +23,11 @@ public class MyTest16 extends ClassLoader {
         this.classLoaderName = classLoaderName;
     }
 
+    public MyTest16(ClassLoader perent) {
+        // 显示指定该类加载器的父类加载器。
+        super(perent);
+    }
+
     public MyTest16(ClassLoader perent, String classLoaderName) {
         // 显示指定该类加载器的父类加载器。
         super(perent);
